@@ -74,6 +74,39 @@
       }
     },
     {
+      "id": "item-52e57103-e309-4136-8c2e-fbb29983a013",
+      "indent": 1,
+      "location": "pages/item-52e57103-e309-4136-8c2e-fbb29983a013/index.html",
+      "slug": "lesson-1/introduction",
+      "order": 0,
+      "parent": "item-72a5228c-d0bd-4b96-a124-f64e18dea25a",
+      "title": "Introduction",
+      "description": "",
+      "metadata": {
+        "locked": false,
+        "created": 1723216821,
+        "images": [],
+        "videos": [],
+        "updated": 1723216821
+      }
+    },
+    {
+      "id": "item-0659ecdb-4e7d-43df-be98-e815337f6e4d",
+      "indent": 0,
+      "location": "pages/item-0659ecdb-4e7d-43df-be98-e815337f6e4d/index.html",
+      "slug": "my-summer-vacation",
+      "order": 0,
+      "parent": null,
+      "title": "My summer vacation",
+      "description": "",
+      "metadata": {
+        "created": 1741501771,
+        "updated": 1741501771,
+        "images": [],
+        "videos": []
+      }
+    },
+    {
       "id": "item-5488fd2d-2976-4bf3-9925-ebae7a26b8ef",
       "indent": 0,
       "location": "pages/item-5488fd2d-2976-4bf3-9925-ebae7a26b8ef/index.html",
@@ -112,23 +145,6 @@
       "order": 1,
       "parent": null,
       "title": "Lesson 1",
-      "description": "",
-      "metadata": {
-        "locked": false,
-        "created": 1723216821,
-        "images": [],
-        "videos": [],
-        "updated": 1723216821
-      }
-    },
-    {
-      "id": "item-52e57103-e309-4136-8c2e-fbb29983a013",
-      "indent": 1,
-      "location": "pages/item-52e57103-e309-4136-8c2e-fbb29983a013/index.html",
-      "slug": "lesson-1/introduction",
-      "order": 0,
-      "parent": "item-72a5228c-d0bd-4b96-a124-f64e18dea25a",
-      "title": "Introduction",
       "description": "",
       "metadata": {
         "locked": false,

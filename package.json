@@ -15,8 +15,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "resolutions": {
-  },
+  "resolutions": {},
   "devDependencies": {
     "@haxtheweb/haxcms-nodejs": "^9.0.5"
   },
@@ -24,5 +23,8 @@
     "start": "npm run dev",
     "dev": "npx @haxtheweb/haxcms-nodejs",
     "dev-theme": "cd custom && npm start"
+  },
+  "dependencies": {
+    "@haxtheweb/create": "^10.0.5"
   }
 }

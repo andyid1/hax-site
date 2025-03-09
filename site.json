@@ -1,0 +1,142 @@
+{
+  "id": "96b450bb-86de-49a3-b06f-54d9778444cf",
+  "title": "hax-single-site",
+  "author": "",
+  "description": "own course",
+  "license": "by-sa",
+  "metadata": {
+    "author": {},
+    "site": {
+      "name": "haxtheweb",
+      "logo": "assets/banner.jpg",
+      "settings": {
+        "lang": "en-US",
+        "publishPagesOn": true,
+        "pathauto": false,
+        "sw": false,
+        "forceUpgrade": true,
+        "gaID": null
+      },
+      "created": 1698074988,
+      "updated": 1723216821,
+      "git": {
+        "vendor": "github",
+        "branch": "gh-pages"
+      },
+      "version": "9.0.5",
+      "static": {},
+      "tags": "website, haxtheweb, hax"
+    },
+    "theme": {
+      "element": "clean-one",
+      "path": "@lrnwebcomponents/clean-one/clean-one.js",
+      "name": "Clean course theme",
+      "thumbnail": "build/es6/node_modules/@lrnwebcomponents/app-hax/lib/assets/images/BlueStyle.svg",
+      "variables": {
+        "image": "",
+        "imageAlt": "",
+        "imageLink": "",
+        "hexCode": "#aeff00",
+        "cssVariable": "--simple-colors-default-theme-deep-purple-7",
+        "icon": "hax:wizard-hat"
+      },
+      "regions": {}
+    },
+    "node": {
+      "fields": {}
+    },
+    "build": {
+      "version": "7.0.15",
+      "structure": "course",
+      "type": "own"
+    }
+  },
+  "items": [
+    {
+      "id": "item-fe4da09a-b9cf-483d-b2d5-6397785f61fe",
+      "indent": 0,
+      "location": "pages/item-fe4da09a-b9cf-483d-b2d5-6397785f61fe/index.html",
+      "slug": "welcome",
+      "order": 0,
+      "parent": null,
+      "title": "Welcome",
+      "description": "Welcome to your new HAX site! Click edit on the top bar to get started\nThis is a boilerplate so that you can add and make new things from the npx @haxtheweb/haxcms-nodejscommand\nWhat can I do?\nWe've ",
+      "metadata": {
+        "created": 1689962391,
+        "updated": 1723216821,
+        "published": true,
+        "hideInMenu": false,
+        "locked": false,
+        "readtime": 1,
+        "videos": {},
+        "images": {},
+        "status": ""
+      }
+    },
+    {
+      "id": "item-5488fd2d-2976-4bf3-9925-ebae7a26b8ef",
+      "indent": 0,
+      "location": "pages/item-5488fd2d-2976-4bf3-9925-ebae7a26b8ef/index.html",
+      "slug": "page",
+      "order": 1,
+      "parent": null,
+      "title": "Page",
+      "description": "\n\n",
+      "metadata": {
+        "created": 1723216766,
+        "updated": 1723217275,
+        "images": {},
+        "videos": {},
+        "published": true,
+        "locked": false,
+        "status": "",
+        "files": [
+          {
+            "path": "[object Object]449209895_10132275882878874_6858206363295672221_n.jpg",
+            "fullUrl": "//home/haxtheweb/haxsite/files/449209895_10132275882878874_6858206363295672221_n.jpg",
+            "url": "files/449209895_10132275882878874_6858206363295672221_n.jpg",
+            "type": "image/jpeg",
+            "name": "449209895_10132275882878874_6858206363295672221_n.jpg",
+            "size": 45592
+          }
+        ],
+        "hideInMenu": false,
+        "readtime": 1
+      }
+    },
+    {
+      "id": "item-72a5228c-d0bd-4b96-a124-f64e18dea25a",
+      "indent": 0,
+      "location": "pages/item-72a5228c-d0bd-4b96-a124-f64e18dea25a/index.html",
+      "slug": "lesson-1",
+      "order": 1,
+      "parent": null,
+      "title": "Lesson 1",
+      "description": "",
+      "metadata": {
+        "locked": false,
+        "created": 1723216821,
+        "images": [],
+        "videos": [],
+        "updated": 1723216821
+      }
+    },
+    {
+      "id": "item-52e57103-e309-4136-8c2e-fbb29983a013",
+      "indent": 1,
+      "location": "pages/item-52e57103-e309-4136-8c2e-fbb29983a013/index.html",
+      "slug": "lesson-1/introduction",
+      "order": 0,
+      "parent": "item-72a5228c-d0bd-4b96-a124-f64e18dea25a",
+      "title": "Introduction",
+      "description": "",
+      "metadata": {
+        "locked": false,
+        "created": 1723216821,
+        "images": [],
+        "videos": [],
+        "updated": 1723216821
+      }
+    }
+  ]
+}

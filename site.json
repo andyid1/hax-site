@@ -153,6 +153,22 @@
         "videos": [],
         "updated": 1723216821
       }
+    },
+    {
+      "id": "item-678ba2d3-3f8b-442f-abb7-a1acf85e3cbf",
+      "indent": 0,
+      "location": "pages/item-678ba2d3-3f8b-442f-abb7-a1acf85e3cbf/index.html",
+      "slug": "my-summer-vacation-copy",
+      "order": 2,
+      "parent": null,
+      "title": "My summer vacation Copy",
+      "description": "",
+      "metadata": {
+        "created": 1741501891,
+        "updated": 1741501891,
+        "images": [],
+        "videos": []
+      }
     }
   ]
 }

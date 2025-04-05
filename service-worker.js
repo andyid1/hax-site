@@ -37,52 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [
-    [
-        "pages\/item-fe4da09a-b9cf-483d-b2d5-6397785f61fe\/index.html",
-        "4QtZ72IOw2cHNOTsWPAmA"
-    ],
-    [
-        "index.html",
-        "mYNB0JpBbujjkUffzajfdw"
-    ],
-    [
-        "assets\/icon-310x310.png",
-        "evNCtFbra5er8F8aEyf1Nw"
-    ],
-    [
-        "assets\/icon-192x192.png",
-        "74dSgETTt2brsR060RY9Q"
-    ],
-    [
-        "assets\/icon-144x144.png",
-        "mwZmJEqvI4ZaomkPYjbsbw"
-    ],
-    [
-        "assets\/icon-96x96.png",
-        "VAPu1xptU6EyvzjXJ0g"
-    ],
-    [
-        "assets\/icon-72x72.png",
-        "swQSScfQu5rBcTHRZd7wiw"
-    ],
-    [
-        "assets\/icon-48x48.png",
-        "MZZtPZxc47sRbVXHlP01A"
-    ],
-    [
-        "manifest.json",
-        "NQ6UNvs0WLO64hLCcFE39A"
-    ],
-    [
-        "site.json",
-        "lXsJzw4z01IBguNcEvetWA"
-    ],
-    [
-        "404.html",
-        "0BBVAns5rLQLPevl6LRa9A"
-    ]
-];
+var precacheConfig = {{ swhash|json_encode(constant('JSON_PRETTY_PRINT'))|raw }};
 var cacheName = 'sw-precache-v3--' + (self.registration ? self.registration.scope : '');
 
 
@@ -330,3 +285,6 @@ self.addEventListener('fetch', function (event) {
 
 
 // Runtime cache configuration, using the sw-toolbox library.
+{% if cdnRegex %}
+toolbox.router.get(/{{ cdnRegex|raw }}/, toolbox.fastest, {});
+{% endif %}

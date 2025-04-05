@@ -5,7 +5,12 @@
   "description": "own course",
   "license": "by-sa",
   "metadata": {
-    "author": {},
+    "author": {
+      "image": "",
+      "name": null,
+      "email": null,
+      "socialLink": null
+    },
     "site": {
       "name": "haxtheweb",
       "logo": "assets/banner.jpg",
@@ -18,27 +23,28 @@
         "gaID": null
       },
       "created": 1698074988,
-      "updated": 1723216821,
+      "updated": 1743822004,
       "git": {
         "vendor": "github",
         "branch": "gh-pages"
       },
       "version": "9.0.5",
       "static": {},
-      "tags": "website, haxtheweb, hax"
+      "tags": "website, haxtheweb, hax",
+      "domain": null
     },
     "theme": {
-      "element": "clean-one",
-      "path": "@lrnwebcomponents/clean-one/clean-one.js",
-      "name": "Clean course theme",
-      "thumbnail": "build/es6/node_modules/@lrnwebcomponents/app-hax/lib/assets/images/BlueStyle.svg",
+      "element": "bootstrap-theme",
+      "path": "@haxtheweb/bootstrap-theme/bootstrap-theme.js",
+      "name": "BootstrapCSS theme",
+      "thumbnail": "build/es6/node_modules/@haxtheweb/app-hax/lib/assets/images/BlueStyle.svg",
       "variables": {
         "image": "",
-        "imageAlt": "",
-        "imageLink": "",
-        "hexCode": "#aeff00",
-        "cssVariable": "--simple-colors-default-theme-deep-purple-7",
-        "icon": "hax:wizard-hat"
+        "imageAlt": null,
+        "imageLink": null,
+        "hexCode": null,
+        "cssVariable": "--simple-colors-default-theme-null-7",
+        "icon": null
       },
       "regions": {}
     },

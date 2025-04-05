@@ -1,8 +1,29 @@
-import{HAXCMSLitElementTheme as t,css as e,html as i,autorun as o,toJS as r,store as a}from"@haxtheweb/haxcms-elements/lib/core/HAXCMSLitElementTheme.js";import"@haxtheweb/haxcms-elements/lib/ui-components/navigation/site-menu-button.js";import"@haxtheweb/haxcms-elements/lib/ui-components/site/site-title.js";import"@haxtheweb/haxcms-elements/lib/ui-components/active-item/site-active-title.js";
 /**
  * Copyright 2025 btopro
  * @license Apache-2.0, see License.md for full text.
- */class n extends t{static get styles(){return[super.styles,e`
+ */
+import { HAXCMSLitElementTheme, css, unsafeCSS, html, store, autorun, toJS } from "@haxtheweb/haxcms-elements/lib/core/HAXCMSLitElementTheme.js";
+import "@haxtheweb/haxcms-elements/lib/ui-components/navigation/site-menu-button.js";
+import "@haxtheweb/haxcms-elements/lib/ui-components/site/site-title.js";
+import "@haxtheweb/haxcms-elements/lib/ui-components/active-item/site-active-title.js";
+/**
+ * `CustomCustomBtoproTheme`
+ * `CustomCustomBtoproTheme based on modern flex design system`
+ * `This theme is an example of extending an existing theme component`
+ *
+ * @microcopy - language worth noting:
+ *  - HAXcms - A headless content management system
+ *  - HAXCMSTheme - A super class that provides correct baseline wiring to build a new theme
+ *
+ * @demo demo/index.html
+ * @element custom-custom-btopro-theme
+ */
+class CustomCustomBtoproTheme extends HAXCMSLitElementTheme {
+  //styles function
+  static get styles() {
+    return [
+      super.styles,
+      css`
         :host {
           display: block;
           padding: var(--ddd-spacing-10) var(--ddd-spacing-20);
@@ -65,7 +86,14 @@ import{HAXCMSLitElementTheme as t,css as e,html as i,autorun as o,toJS as r,stor
         simple-icon-button {
           margin-left: var(--ddd-spacing-10);
         }
-      `]}HAXCMSGlobalStyleSheetContent(){return[...super.HAXCMSGlobalStyleSheetContent(),e`
+      `,
+    ];
+  }
+  // allows for global styles to be set against the entire document
+  HAXCMSGlobalStyleSheetContent() {
+    return [
+      ...super.HAXCMSGlobalStyleSheetContent(),
+      css`
       :root {
         --joker-purple: var(--ddd-theme-default-wonderPurple);
         --joker-green: var(--ddd-theme-default-opportunityGreen);
@@ -86,7 +114,24 @@ import{HAXCMSLitElementTheme as t,css as e,html as i,autorun as o,toJS as r,stor
       body.dark-mode {
         background-color: var(--joker-purple);
       }
-      `]}static get properties(){return{...super.properties,activeId:{type:String},_items:{type:Array}}}toggleBodyLightning(){globalThis.document.body.classList.toggle("lightning")}render(){return i`
+      `,
+    ];
+  }
+
+  static get properties() {
+    return {
+      ...super.properties,
+      activeId: { type: String },
+      _items: { type: Array },
+    };
+  }
+
+  toggleBodyLightning() {
+    globalThis.document.body.classList.toggle("lightning");
+  }
+
+  render() {
+    return html`
     <div class="wrapper">
     <header>
       <ul>
@@ -96,11 +141,14 @@ import{HAXCMSLitElementTheme as t,css as e,html as i,autorun as o,toJS as r,stor
             position="top"
           ></site-menu-button>
         </li>
-    ${this._items.map((t,e)=>i`
-        <li class="${t.id===this.activeId?"active":""}">
-          <a href="${t.slug}"><button title="${t.title}">${e+1}</button></a>
+    ${this._items.map((item, index) => {
+      return html`
+        <li class="${item.id === this.activeId ? "active" : ""}">
+          <a href="${item.slug}"><button title="${item.title}">${(index+1)}</button></a>
         </li>
-      `)}
+      `;
+    }
+    )}
         <li>
           <site-menu-button
             type="next"
@@ -121,4 +169,26 @@ import{HAXCMSLitElementTheme as t,css as e,html as i,autorun as o,toJS as r,stor
       <slot name="footer"></slot>
     </footer>
   </div>
-    `}static get tag(){return"custom-custom-btopro-theme"}constructor(){super(),this._items=[],this.activeId=null,o(()=>{this.activeId=r(a.activeId),this._items=r(a.manifest.items)})}}customElements.define(n.tag,n);
+    `;
+  }
+
+  /**
+   * Store the tag name to make it easier to obtain directly.
+   * @notice function name must be here for tooling to operate correctly
+   */
+  static get tag() {
+    return "custom-custom-btopro-theme";
+  }
+ 
+  constructor() {
+    super();
+    this._items = [];
+    this.activeId = null;
+    autorun(() => {
+      this.activeId = toJS(store.activeId);
+      this._items = toJS(store.manifest.items);
+    });
+  }
+}
+customElements.define(CustomCustomBtoproTheme.tag, CustomCustomBtoproTheme);
+export { CustomCustomBtoproTheme };
